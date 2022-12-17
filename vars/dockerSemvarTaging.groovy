@@ -1,5 +1,5 @@
 import jenkins.model.Jenkins
-import hudson.model. *
+import hudson.model.*
 def call(String jobname, String versionType, String stage) {
   if ("$stage" == "get") {
     TAG = getTag(jobname, versionType, "get")
