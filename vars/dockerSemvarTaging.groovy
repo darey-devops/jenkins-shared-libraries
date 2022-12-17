@@ -13,7 +13,7 @@ def call(String jobname, String versionType, String stage) {
 def getTag(String jobname, String versionType, String stage) {
   def jenkins = Jenkins.getInstance()
   def job = Jenkins.instance.getItemByFullName(jobname)
-  def TAG = "0.0.0"
+  def TAG = "1.0.0"
   paramsDef = job.getProperty(ParametersDefinitionProperty.class)
   if (paramsDef) {
     paramsDef.parameterDefinitions.each {
